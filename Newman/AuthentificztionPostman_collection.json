@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "7e28c9a6-8821-48e8-bc78-a5a11c563961",
+		"name": "Authentificztion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DifferentApi",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"key\");\r",
+							"});\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.github.scarlet-witch-preview+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": " 27d3662ae864c85664988ec17c9b35368b6bd9d9",
+						"type": "text"
+					},
+					{
+						"key": "org",
+						"value": "ORG",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.github.com/codes_of_conduct",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"codes_of_conduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

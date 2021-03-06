@@ -1,0 +1,767 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "7e28c9a6-8821-48e8-bc78-a5a11c563961"
+    },
+    "item": [
+      {
+        "id": "6e6d7cd3-fbc4-4082-a6c5-72ea3f5ea89e",
+        "name": "DifferentApi",
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              "codes_of_conduct"
+            ],
+            "host": [
+              "api",
+              "github",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Accept",
+              "value": "application/vnd.github.scarlet-witch-preview+json"
+            },
+            {
+              "key": "Authorization",
+              "value": " 27d3662ae864c85664988ec17c9b35368b6bd9d9"
+            },
+            {
+              "disabled": true,
+              "key": "org",
+              "value": "ORG"
+            }
+          ],
+          "method": "GET",
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "auth": {
+            "type": "noauth",
+            "noauth": []
+          }
+        },
+        "response": [],
+        "event": [
+          {
+            "listen": "prerequest",
+            "script": {
+              "id": "1d6f659e-b665-41bc-882b-e8dd9c004ee9",
+              "type": "text/javascript",
+              "exec": [
+                ""
+              ],
+              "_lastExecutionId": "eea6230d-e258-450e-b252-71b13d1da800"
+            }
+          },
+          {
+            "listen": "test",
+            "script": {
+              "id": "ccdf3f22-6d6f-4458-8787-5add65bdfbdd",
+              "type": "text/javascript",
+              "exec": [
+                "\r",
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Status code name has string\", function () {\r",
+                "    pm.response.to.have.status(\"OK\");\r",
+                "pm.test(\"Body matches string\", function () {\r",
+                "    pm.expect(pm.response.text()).to.include(\"key\");\r",
+                "});\r",
+                "});\r",
+                ""
+              ],
+              "_lastExecutionId": "e6a8a6ae-caca-418f-8e23-ce4cf411590c"
+            }
+          }
+        ],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+      "_postman_id": "7e28c9a6-8821-48e8-bc78-a5a11c563961",
+      "name": "Authentificztion",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "f4769ef8-21f0-4a83-8770-248b9f7e7b54",
+    "values": []
+  },
+  "globals": {
+    "id": "6653d99f-7e0e-4c0d-9671-d756647d545e",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 2,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 3,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 787,
+      "responseMin": 787,
+      "responseMax": 787,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1614986014898,
+      "completed": 1614986015763
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "7b3ab3a9-c40e-44a8-9183-388e06a78575",
+          "httpRequestId": "c04f7872-e69e-49ce-8312-5b4435b82efc"
+        },
+        "item": {
+          "id": "6e6d7cd3-fbc4-4082-a6c5-72ea3f5ea89e",
+          "name": "DifferentApi",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "codes_of_conduct"
+              ],
+              "host": [
+                "api",
+                "github",
+                "com"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/vnd.github.scarlet-witch-preview+json"
+              },
+              {
+                "key": "Authorization",
+                "value": " 27d3662ae864c85664988ec17c9b35368b6bd9d9"
+              },
+              {
+                "disabled": true,
+                "key": "org",
+                "value": "ORG"
+              }
+            ],
+            "method": "GET",
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "auth": {
+              "type": "noauth",
+              "noauth": []
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "1d6f659e-b665-41bc-882b-e8dd9c004ee9",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ],
+                "_lastExecutionId": "eea6230d-e258-450e-b252-71b13d1da800"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "ccdf3f22-6d6f-4458-8787-5add65bdfbdd",
+                "type": "text/javascript",
+                "exec": [
+                  "\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Status code name has string\", function () {\r",
+                  "    pm.response.to.have.status(\"OK\");\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"key\");\r",
+                  "});\r",
+                  "});\r",
+                  ""
+                ],
+                "_lastExecutionId": "e6a8a6ae-caca-418f-8e23-ce4cf411590c"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              "codes_of_conduct"
+            ],
+            "host": [
+              "api",
+              "github",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Accept",
+              "value": "application/vnd.github.scarlet-witch-preview+json"
+            },
+            {
+              "key": "Authorization",
+              "value": " 27d3662ae864c85664988ec17c9b35368b6bd9d9"
+            },
+            {
+              "disabled": true,
+              "key": "org",
+              "value": "ORG"
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.26.10",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "f7691f48-7d31-4c22-8a29-70a7f9dd494e",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "api.github.com",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "GET",
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "auth": {
+            "type": "noauth",
+            "noauth": []
+          }
+        },
+        "response": {
+          "id": "f455f45c-d080-46e0-a4e0-57c5a8635940",
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Server",
+              "value": "GitHub.com"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 05 Mar 2021 23:13:35 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=60, s-maxage=60"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding, Accept, X-Requested-With"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3d11e8c27ae6a4b35cc8c8477fd5abc2a26a4677665065dfd125866ea0b134ce\""
+            },
+            {
+              "key": "X-GitHub-Media-Type",
+              "value": "github.scarlet-witch-preview; format=json"
+            },
+            {
+              "key": "X-RateLimit-Limit",
+              "value": "60"
+            },
+            {
+              "key": "X-RateLimit-Remaining",
+              "value": "54"
+            },
+            {
+              "key": "X-RateLimit-Reset",
+              "value": "1614988362"
+            },
+            {
+              "key": "X-RateLimit-Used",
+              "value": "6"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubdomains; preload"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "deny"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "X-GitHub-Request-Id",
+              "value": "C869:350D:538505:8780F9:6042BB1F"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              91,
+              123,
+              34,
+              107,
+              101,
+              121,
+              34,
+              58,
+              34,
+              99,
+              111,
+              110,
+              116,
+              114,
+              105,
+              98,
+              117,
+              116,
+              111,
+              114,
+              95,
+              99,
+              111,
+              118,
+              101,
+              110,
+              97,
+              110,
+              116,
+              34,
+              44,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              34,
+              67,
+              111,
+              110,
+              116,
+              114,
+              105,
+              98,
+              117,
+              116,
+              111,
+              114,
+              32,
+              67,
+              111,
+              118,
+              101,
+              110,
+              97,
+              110,
+              116,
+              34,
+              44,
+              34,
+              104,
+              116,
+              109,
+              108,
+              95,
+              117,
+              114,
+              108,
+              34,
+              58,
+              110,
+              117,
+              108,
+              108,
+              44,
+              34,
+              117,
+              114,
+              108,
+              34,
+              58,
+              34,
+              104,
+              116,
+              116,
+              112,
+              115,
+              58,
+              47,
+              47,
+              97,
+              112,
+              105,
+              46,
+              103,
+              105,
+              116,
+              104,
+              117,
+              98,
+              46,
+              99,
+              111,
+              109,
+              47,
+              99,
+              111,
+              100,
+              101,
+              115,
+              95,
+              111,
+              102,
+              95,
+              99,
+              111,
+              110,
+              100,
+              117,
+              99,
+              116,
+              47,
+              99,
+              111,
+              110,
+              116,
+              114,
+              105,
+              98,
+              117,
+              116,
+              111,
+              114,
+              95,
+              99,
+              111,
+              118,
+              101,
+              110,
+              97,
+              110,
+              116,
+              34,
+              125,
+              44,
+              123,
+              34,
+              107,
+              101,
+              121,
+              34,
+              58,
+              34,
+              99,
+              105,
+              116,
+              105,
+              122,
+              101,
+              110,
+              95,
+              99,
+              111,
+              100,
+              101,
+              95,
+              111,
+              102,
+              95,
+              99,
+              111,
+              110,
+              100,
+              117,
+              99,
+              116,
+              34,
+              44,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              34,
+              67,
+              105,
+              116,
+              105,
+              122,
+              101,
+              110,
+              32,
+              67,
+              111,
+              100,
+              101,
+              32,
+              79,
+              102,
+              32,
+              67,
+              111,
+              110,
+              100,
+              117,
+              99,
+              116,
+              34,
+              44,
+              34,
+              104,
+              116,
+              109,
+              108,
+              95,
+              117,
+              114,
+              108,
+              34,
+              58,
+              110,
+              117,
+              108,
+              108,
+              44,
+              34,
+              117,
+              114,
+              108,
+              34,
+              58,
+              34,
+              104,
+              116,
+              116,
+              112,
+              115,
+              58,
+              47,
+              47,
+              97,
+              112,
+              105,
+              46,
+              103,
+              105,
+              116,
+              104,
+              117,
+              98,
+              46,
+              99,
+              111,
+              109,
+              47,
+              99,
+              111,
+              100,
+              101,
+              115,
+              95,
+              111,
+              102,
+              95,
+              99,
+              111,
+              110,
+              100,
+              117,
+              99,
+              116,
+              47,
+              99,
+              105,
+              116,
+              105,
+              122,
+              101,
+              110,
+              95,
+              99,
+              111,
+              100,
+              101,
+              95,
+              111,
+              102,
+              95,
+              99,
+              111,
+              110,
+              100,
+              117,
+              99,
+              116,
+              34,
+              125,
+              93
+            ]
+          },
+          "cookie": [],
+          "responseTime": 787,
+          "responseSize": 302
+        },
+        "id": "6e6d7cd3-fbc4-4082-a6c5-72ea3f5ea89e",
+        "assertions": [
+          {
+            "assertion": "Status code is 200",
+            "skipped": false
+          },
+          {
+            "assertion": "Body matches string",
+            "skipped": false
+          },
+          {
+            "assertion": "Status code name has string",
+            "skipped": false
+          }
+        ]
+      }
+    ],
+    "transfers": {
+      "responseTotal": 302
+    },
+    "failures": [],
+    "error": null
+  }
+}
